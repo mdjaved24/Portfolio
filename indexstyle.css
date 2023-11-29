@@ -1,0 +1,819 @@
+
+/* ======================================= */
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif; */
+
+
+/* ======================================== */
+/* COLORS */
+:root{
+    --primary-color: rgb(253, 87, 120);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+
+/* ========================================== */
+
+/* HOME */
+
+.home{
+    height: 47vw;
+    background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('images/homebg.jpg');
+    background-size: cover;
+}
+
+/* NAVIGATION BAR */
+
+.leftnav h1{
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.rightnav{
+    margin: -6rem 0.5rem 0 0 ;
+    float: right;
+    right: 1rem;
+    width: 13vw;
+}
+
+
+#menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    margin:0.5rem -2rem 0 0;
+    padding: 0 0.5rem 0 4.5rem ;
+}
+
+#menubtn{
+    background: none;
+    border: none;
+    padding: 0 1rem 0 1rem;
+    margin: 2.2rem 0 0 -4rem;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+
+#menuicon{
+    margin: 2.3rem 0.5rem 0 -0.5rem;
+    padding-left: -0.5rem;
+    width: 1.6vw;
+    height: 2.3vh;
+    background-color: white;
+}
+
+
+#menubtn:hover{
+     color: var(--primary-color);
+     cursor: pointer;
+}
+
+
+#navul{
+    margin: 0.5rem 0 0 2rem;
+    padding:0 1rem;
+    background: black;
+    display: none;
+    width: 10vw;
+}
+
+.navlist{
+    list-style: none;
+    line-height: 1.5rem;
+}
+
+.navlist a{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.navlist a:hover{
+    font-size: 1.3rem;
+    padding:0 0.2rem;
+    color: var(--primary-color);
+    transition: all 0.2s ease-in;
+}
+
+
+/* ====================================== */
+
+/* HOME INTRO */
+#homesection{
+    margin-top: 15rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#hello{
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-family: "poppins-bold", sans-serif;
+}
+
+#name{
+    color: white;
+    font-size: 4rem;
+    font-family: "poppins-medium", sans-serif;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#role{
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* MORE ABOUT ME */
+#moreaboutme{
+    margin: 1.5rem;
+    padding: 0rem;
+    width: 10vw;
+    height: 5vh;
+    background: none;
+    border: 1px solid gray;
+}
+
+#moreaboutme a{
+    text-decoration: none;
+    color: white;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+#moreaboutme:hover{
+    border-color: var(--primary-color);
+}
+
+
+
+/* ================================================= */
+
+/* ABOUT */
+
+#about{
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutheading{
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    color: var(--primary-color);
+}
+
+#introduce{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.introduction{
+    margin: 1.5rem;
+    display: flex;
+    width: 70vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.introduction img{
+    margin-right: 1rem;
+    width: 14vw;
+    height: 15vh;
+}
+
+.introduction p{
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.profile_skills{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+   justify-content: space-between;
+}
+
+.profile,.skills{
+     margin: 1.5rem;
+     width: 80vh;
+     height: 80vh;
+}
+
+.profile h1,.skills h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+
+.profile p, .skills p{
+    margin: 1rem;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.details{
+    margin: 1.5rem;
+}
+.details h2{
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.details p{
+    margin: 0;
+    text-align: start;
+    color: gray;
+    font-size: 1.2rem;
+    font-family: monospace;
+}
+
+
+/* ============================================ */
+
+/* SKILLS */
+
+.skillname{
+    margin: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skillandpercent{
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skillandpercent h2{
+    font-size: 1rem;
+}
+
+.skillbars{
+    width: 100%;
+    height: 1vh;
+    border: 1px solid gray;
+}
+
+
+.skillfill{
+    height: 1vh;
+    background-color: black;
+}
+
+#htmlfill{
+    width: 75%;
+}
+
+#cssfill{
+    width: 60%;
+}
+
+#jsfill{
+    width: 30%;
+}
+
+#pyfill{
+    width: 55%;
+}
+
+#javafill{
+    width: 65%;
+}
+
+/* ========================================== */
+
+/* VIEW RESUME */
+
+#viewresume{
+    margin-top: -8rem;
+    width: 9vw;
+    height: 4.5vh;
+    background-color: black;
+    color: white;
+    font-size: 0.8rem;
+    font-family: monospace;
+}
+
+#viewresume:hover{
+    border: 2px solid var(--primary-color);
+}
+
+#resume{
+    width: 100%;
+    height: 250vh;
+}
+
+
+/* ============================================================ */
+/* ============================================================ */
+
+/* Education */
+
+#education{
+    background-color: #ebebeb;
+    padding: 2rem 0;
+}
+
+#educationheading{
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-family: monospace;
+}
+
+.educationbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+#educationline{
+    width: 2px;
+    height: 100vh;
+    background-color: #a7a7a7;
+    margin-top: -4rem;
+}
+
+.timelineimg{
+    margin-right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+}
+
+.courses{
+    position: relative;
+    width: 30%;
+}
+
+.coursename{
+    position: relative;
+    width: 100%;
+    margin: 0 0 12rem 0;
+}
+
+.coursename h1{
+    font-size: 1.2rem;
+    font-family: "poppins-semibold", sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.coursename p{
+    font-size: 1.1rem;
+}
+
+.coursename h3, .coursename p{
+    color: #4e4e4e;
+}
+
+
+.institution{
+    position: relative;
+    width: 40%;
+    margin: 1rem 0 0 -1.5rem;
+}
+
+.institutename{
+    display: flex;
+    width: 100%;
+    margin: 1.5rem 0 7.5rem 0;
+}
+
+.institutename h1{
+    font-size: 1.3rem;
+    font-family: "poppins-semibold", sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.institutename p{
+    font-size: 0.9rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#bca{
+    margin-left: 3rem;
+    margin-top: 3.5rem;
+}
+
+#isc{
+    width: 60%;
+    margin-left: 9rem;
+}
+
+#school{
+     width: 30%;
+     left: 68%;
+}
+
+#kcc{
+    margin-bottom: 6.3rem;
+}
+
+
+/* ========================================================================= */
+/* ACHIEVEMENTS */
+#achievements{
+    background-color: #ebebeb;
+}
+#achievementsheading{
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#achievementcaption{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.achievementbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#achievementline{
+    width: 2px;
+    height: 123vh;
+    background-color: #a7a7a7;
+    margin-top: -5rem;
+}
+
+.timelineimg{
+    margin-right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+}
+
+.achcourse{
+    width: 28%;
+    margin-top: -5.5rem;
+
+}
+
+.achievementname{
+    position: relative;
+    width: 100%;
+}
+
+.achievementname h1{
+    font-size: 1.3rem;
+    font-family: "poppins-semibold", sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.achievementname h3{
+    font-size: 1.2rem;
+    color: #707070;
+}
+
+.achievementdescription{
+    position: relative;
+    width: 40%;
+    margin: 1rem 0 0 -1.5rem;
+}
+
+.instituteofach{
+    display: flex;
+    width: 100%;
+    margin: 1.5rem 0 7.5rem 0;
+}
+
+.instituteofach h1{
+    font-size: 1.3rem;
+    font-family: "poppins-semibold", sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.instituteofach p{
+    font-size: 0.9rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#spellbee{
+    margin-left: 14rem;
+    margin-top: 1.3rem;
+    width: 45%;
+}
+
+#quiz{
+    width: 75%;
+    margin-left: 6rem;
+    margin-top: 11.5rem;
+}
+
+#rotaract{
+    width: 60%;
+    margin-left: 10.5rem;
+    margin-top: 12rem;
+}
+
+#itsociety{
+    margin-top: -4rem;
+    margin-left: 0.8rem;
+    width: 95%;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+
+
+/* ========================================================================= */
+
+/* SERVICES */
+#services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('images/servicebg.jpg');
+    background-position: center;
+}
+
+#serviceheading{
+    padding-top: 2.5rem ;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#whatcanido{
+    text-align: center;
+    margin: 0.5rem;
+    color: white;
+    font-size: 2.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#servicepara{
+    margin: 1rem;
+    width: 60%;
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(190, 190, 190);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.servicecontent{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+}
+
+.servicebox{
+    width: 25%;
+}
+
+.servicebox h1{
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.servicebox p{
+    margin: 0.5rem;
+     font-size: 1.1rem;
+     text-align: center;
+     color: rgb(190, 190, 190);
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* ===================================================================== */
+
+/* CONTACT */
+#contact{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contactheading{
+    padding-top: 2rem;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#contactcaption{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#contact p{
+    width: 50%;
+    text-align: center;
+    color: #ebebeb;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.form{
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form input{
+    margin-top: 1.2rem;
+    width: 30vw;
+    background:none;
+    height: 4.8vh;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-bottom: 1px solid rgb(48, 48, 48);
+    color: white;
+}
+
+#entername{
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form input:focus,#message:focus{
+     border-bottom: 2px solid var(--primary-color);
+     outline: none;
+}
+
+#message{
+    margin-top: 1.3rem;
+    background: none;
+    color: #ebebeb;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-bottom: 1px solid rgb(48, 48, 48);
+}
+
+#submit{
+    margin: 1.5rem;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 4.8vh;
+    font-size: 1.2rem;
+    color: white;
+    font-family: monospace;
+}
+
+#submit:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Contact Option  */
+
+
+
+.contactoption{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactinfo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0;
+    text-align: center;
+    width: 20%;  
+    height: 30vh;
+    padding: 0;
+}
+
+
+
+.contactinfo h1{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--primary-color);
+    font-family: monospace;
+}
+
+.contactinfo a{
+    text-decoration: none;
+    color: white;
+    margin-top: -1rem;
+    padding: 0;
+}
+
+#contact a{
+    font-size: 1rem;
+}
+
+.contactinfo a:hover{
+    cursor: pointer;
+     color: #a7a7a7;
+}
+
+
+#linkedin h1{
+    padding-left: 1rem;
+} 
+
+/* icons */
+
+#emailicon{
+    margin: -2.3rem 0 -0.5rem 0;
+    width: 6.5vw;
+    height: 10vh;
+}
+
+#phoneicon{
+    margin: -1.5rem 0 0.2rem ;
+    width: 3.5vw;
+    height: 7vh;
+}
+
+#whatsappicon{
+    margin: -1.5rem 0 0.2rem ;
+    width: 4.5vw;
+    height: 8vh;
+}
+
+#linkedinicon{
+    margin: -1.5rem 0 0.2rem 0;
+    border-radius: 100%;
+    width: 3.5vw;
+    height: 7vh;
+}
+
+/* address */
+
+#address{
+    margin-top: -3rem;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+#address p{
+    width: 100%;
+    text-align: center;
+}
+
+#address strong{
+    color: var(--primary-color);
+}
+
+
+/* footer */
+footer{
+    height: 5vh;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: black;
+    text-align: center;
+}
