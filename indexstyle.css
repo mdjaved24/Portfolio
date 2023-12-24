@@ -4,9 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;500;600;700&display=swap');
 
-/* font-family: 'Lora', serif;
-font-family: 'Poppins', sans-serif; */
-
 
 /* ======================================== */
 /* COLORS */
@@ -299,10 +296,6 @@ html{
 }
 
 #jsfill{
-    width: 30%;
-}
-
-#pyfill{
     width: 55%;
 }
 
